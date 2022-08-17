@@ -6,10 +6,12 @@ import { createStage } from "../gameHelpers";
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
+import { StyledTetris, StyledTetrisWrapper } from "./styles/StyledTetris";
 
 const Tetris = () => {
     return(
-        <div>
+        <StyledTetrisWrapper>
+            <StyledTetris>
             <Stage stage={createStage()} />
             <aside>
                 <div>
@@ -19,7 +21,8 @@ const Tetris = () => {
                 </div>
                 <StartButton />
             </aside>
-        </div>
+            </StyledTetris>
+        </StyledTetrisWrapper>
     )
 }
 
