@@ -23,7 +23,7 @@ const Tetris = () => {
             </aside>
             </StyledTetris>
         </StyledTetrisWrapper>
-    )
-}
+    );
+};
 
 export default Tetris;
